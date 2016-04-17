@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="pgu.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Croissant+One|Offside|Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>
+    <title>Hairdresser Studio Petra</title>
+
+    <!-- CSS za glavni del Bootstrapa -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS po meri in upravljanje SCROLL navigacije -->
+
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+</head>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Modal Funkcija-->
+
+<div class="container">
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">O nas</h4>
+                </div>
+                <div class="modal-body">
+                    Vnesi text
+                </div>
+                <div align="center">
+                    <img src="https://s3-eu-west-1.amazonaws.com/ownpictures/hair-salon.jpg" class="img-rounded" class="img-responsive" style="width:500px;height:300px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Zapri</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Navigacija -->
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Petra Hairdressing Studio</a>
+            </div>
+
+            <!-- Povezave s funkcijo scroll navigacija po strani in modal gumb o nas (glavni del modal funkcije vrst. 43) -->
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden" id="naslov">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Kaj nudimo</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Naroči se</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Kontakt</a>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">O nas</a></li>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Iskalnik">
+                        </div>
+                    </form>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Del -->
+
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                            <!-- Indikatorji od carousel-->
+
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+
+                            <div class="carousel-inner" role="listbox">
+
+                                <div class="item active">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/ownpictures/254H.jpg" alt="Image">
+                                    <div class="carousel-caption">
+                                        <h3>Chania</h3>
+                                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/ownpictures/233H.jpg" alt="Image">
+                                    <div class="carousel-caption">
+                                        <h3>Chania</h3>
+                                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/ownpictures/121H.jpg" alt="Image">
+                                    <div class="carousel-caption">
+                                        <h3>Flowers</h3>
+                                        <p>Beatiful flowers in Kolymbari, Crete.</p>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <img src="https://s3-eu-west-1.amazonaws.com/ownpictures/182H.jpg" alt="Image">
+                                    <div class="carousel-caption">
+                                        <h3>Flowers</h3>
+                                        <p>Beatiful flowers in Kolymbari, Crete.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a class="btn btn-default page-scroll" href="#about">Kaj nudimo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kaj nudimo del -->
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Kaj nudimo</h1>
+                    <br>
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <h3 class="naslov">Nega las &nbsp;&nbsp;<span class="fa fa-leaf fa-lg" aria-hidden="true"></span></h3>
+                            <br>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-primary" href="#" role="button">Podrobno »</a></p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>Barvanje &nbsp;&nbsp;<span class="fa fa-rocket fa-lg" aria-hidden="true"></span></h3>
+                            <br>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><a class="btn btn-primary" href="#" role="button">Podrobno »</a></p>
+                        </div>
+                        <div class="col-lg-4">
+                            <h3>Striženje &nbsp;&nbsp;<span class="fa fa-refresh fa-lg" aria-hidden="true"></span></h3>
+                            <br>
+                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+                            <p><a class="btn btn-primary" href="#" role="button">Podrobno »</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Naroči se in urnik -->
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Naroči se del -->
+
+                    <h1>Naroči se</h1>
+                    <div class="col-lg-5 pull-left">
+                        <br>
+                        <div class="form-group">
+                            <label for="name">Ime:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Priimek:</label>
+                            <input type="text" class="form-control" id="lastname">
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Termin:</label>
+                            <input type="text" class="form-control" id="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Ostalo(želje glede pričeske itd.):</label>
+                            <textarea class="form-control" rows="3" id="comment"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2"> &nbsp;&nbsp;This is the second checkbox</label>
+                            </div>
+                            <div class="col-lg-2 pull-right">
+                                <button type="button" class="btn btn-primary btn-md pull-right">Pošlji</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Urnik -->
+
+                    <div class="col-lg-6 pull-right">
+                        <br>
+                        <br>
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>Dan</th>
+                                <th>Delovne ure</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Ponedeljek</td>
+                                <td>8:00-16:00</td>
+                            </tr>
+                            <tr>
+                                <td>Torek</td>
+                                <td>10:00-18:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sreda</td>
+                                <td>8:00-16:00</td>
+                            </tr>
+                            <tr>
+                                <td>Četrtek</td>
+                                <td>8:00-16:00</td>
+                            </tr>
+                            <tr>
+                                <td>Petek</td>
+                                <td>12:00-20:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sobota</td>
+                                <td>8:00-16:00</td>
+                            </tr>
+                            <tr>
+                                <td>Nedelja</td>
+                                <td>8:00-12:00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            *Ob praznikih velja nedeljski urnik
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- FAQ del -->
+
+    <section id="faq" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>FAQ</h1>
+                    <div class="container">
+                        <br />
+                        <br />
+                        <br />
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is account registration required?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        Account registration at <strong>PrepBootstrap</strong> is only required if you will be selling or buying themes.
+                                        This ensures a valid communication channel for all parties involved in any transactions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Can I submit my own Bootstrap templates or themes?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTen" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        A lot of the content of the site has been submitted by the community. Whether it is a commercial element/template/theme
+                                        or a free one, you are encouraged to contribute. All credits are published along with the resources.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">What is the currency used for all transactions?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEleven" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        All prices for themes, templates and other items, including each seller's or buyer's account balance are in <strong>USD</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Noga - kontakt in gumbi za navigacijo po strani -->
+
+<!-- Kontakt -->
+
+<section id="contact" class="contact-section">
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 pull-center">
+            <h4>Kontakt</h4>
+            <div>Hairdressing studio Petra s.p.</div>
+            <div>Davčna št.: SI1998988</div>
+            <div>Frizerska ulica 123,6000 Koper</div>
+            <div>Tel.: 05/345.6555.55</div>
+            <div>Email:narocanje@petra.si</div>
+            <br>
+        </div>
+        <div class="col-md-2">
+            <a class="thumbnail">
+                <img src="https://s3-eu-west-1.amazonaws.com/ownpictures/hairsaloonlogo.jpg" class="img-rounded" class="img-responsive" style="width:150px;height:150px">
+            </a>
+        </div>
+        <div class="col-md-2 pull-right">
+            <h4>Navigacija</h4>
+            <li><a class="page-scroll" href="#about">Kaj nudimo</a></li>
+            <li><a class="page-scroll" href="#services">Naroči se</a></li>
+            <li><a class="page-scroll" href="#faq">Pogosta vprašanja</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal">O nas</a></li>
+            <li><a class="page-scroll" href="#page-top">Na vrh strani</a></li>
+        </div>
+    </div>
+</div>
+</section>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
