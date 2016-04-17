@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Croissant+One|Offside|Oleo+Script+Swash+Caps:400,700|Caveat+Brush|Open+Sans:400,600,700|Titillium+Web:400,300,600|Passion+One|Lobster|Bree+Serif' rel='stylesheet' type='text/css'>
     <title>Hairdresser Studio Petra</title>
 
@@ -177,7 +178,7 @@
                             </a>
                         </div>
                     </div>
-                    <a class="btn btn-default page-scroll" href="#about">Kaj nudimo</a>
+                    <a class="btn btn-info page-scroll" href="#about">Kaj nudimo</a>
                 </div>
             </div>
         </div>
@@ -214,6 +215,7 @@
                 </div>
             </div>
         </div>
+        <a class="btn btn-info page-scroll" href="#services">Naroči se</a>
     </section>
 
     <!-- Naroči se in urnik -->
@@ -228,28 +230,31 @@
                     <h1 class="nudimo">Naroči se</h1>
                     <div class="col-lg-5 pull-left">
                         <br>
-                        <div class="form-group">
+                        <div class="form-group formcss">
                             <label for="name">Ime:</label>
                             <input type="text" class="form-control" id="name">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group formcss">
                             <label for="lastname">Priimek:</label>
                             <input type="text" class="form-control" id="lastname">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group formcss">
                             <label for="date">Termin:</label>
                             <input type="text" class="form-control" id="date">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group formcss">
                             <label for="comment">Ostalo (želje glede pričeske itd.):</label>
                             <textarea class="form-control" rows="3" id="comment"></textarea>
                         </div>
                         <div class="row">
-                            <div class="col-lg-10">
-                                <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2"> &nbsp;&nbsp;Strinjam se, da je Petra najboljša frizerka</label>
+                            <div class="col-lg-10 formcss">
+                                <label>
+                                    <input type="checkbox" class="formcss" value="second_checkbox">
+
+                                </label><label for> &nbsp;&nbsp;Strinjam se, da je Petra najboljša frizerka</label>
                             </div>
                             <div class="col-lg-2 pull-right">
-                                <button type="button" class="btn btn-primary btn-md pull-right">Pošlji</button>
+                                <button type="button" class="btn btn-primary btn-md pull-right formcss">Pošlji</button>
                             </div>
                         </div>
                     </div>
@@ -303,6 +308,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <a class="btn btn-info page-scroll" href="#faq">Pogosta vprašanja</a>
     </section>
 
     <!-- FAQ del -->
@@ -357,17 +364,17 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
+        <a class="btn btn-info page-scroll" href="#contact">Kontakt</a>
     </section>
 
 <!-- Noga - kontakt in gumbi za navigacijo po strani -->
 
 <!-- Kontakt -->
 
-<section id="contact" class="contact-section">
+<section id="contact" class="contact-section kontakt">
 <div class="container">
     <div class="row">
         <div class="col-md-5 pull-center">
@@ -386,11 +393,11 @@
         </div>
         <div class="col-md-2 pull-right">
             <h4>Navigacija</h4>
-            <li><a class="page-scroll" href="#about">Kaj nudimo</a></li>
-            <li><a class="page-scroll" href="#services">Naroči se</a></li>
-            <li><a class="page-scroll" href="#faq">Pogosta vprašanja</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#myModal">O nas</a></li>
-            <li><a class="page-scroll" href="#page-top">Na vrh strani</a></li>
+            <li><a class="page-scroll kontakt" href="#about" style="text-decoration: none">Kaj nudimo</a></li>
+            <li><a class="page-scroll kontakt" href="#services" style="text-decoration: none">Naroči se</a></li>
+            <li><a class="page-scroll kontakt" href="#faq" style="text-decoration: none">FAQ Pogosta vprašanja</a></li>
+            <li><a class="kontakt" href="#" style="text-decoration: none" data-toggle="modal" data-target="#myModal">O nas</a></li>
+            <li><a class="page-scroll kontakt" href="#page-top" style="text-decoration: none">Na vrh strani</a></li>
         </div>
     </div>
 </div>
