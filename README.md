@@ -1,1 +1,1 @@
-# Frizerski Studio Projekt# HairdressingStudio
+# HairdressingStudio Projekt - learning web dev

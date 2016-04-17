@@ -27,7 +27,7 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 80px;
+    padding-top: 60px;
     text-align: center;
     background: lightslategrey;
 }
@@ -55,11 +55,12 @@ of those sections to manage the look and feel of the site. */
 .naslov {
     font-family: 'Titillium Web', sans-serif;
     font-size: 30px;
+    color: white;
 }
 .nudimo {
     font-family: 'Lobster', cursive;
     font-size: 40px;
-    color: darkseagreen;
+    color: white;
 }
 .title {
     font-family: 'Oleo Script', cursive;
@@ -83,6 +84,7 @@ of those sections to manage the look and feel of the site. */
 }
 .storitve {
     font-family: 'Titillium Web', sans-serif;
+    color: white;
 }
 .podrobno{
     font-family: 'Titillium Web', sans-serif;
@@ -112,4 +114,20 @@ of those sections to manage the look and feel of the site. */
 .navbar-default .navbar-nav > .active > a:focus {
     color: indianred;
     background-color: #E7E7E7;
+}
+.formcss {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color:white;
+}
+.kontakt{
+    font-family:"Open Sans";
+    color: white;
+
+#faqodgovor{
+    font-family:"Open Sans";
+}
+.modaltext{
+    font-family: 'Bree Serif', serif;
 }
